@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="237.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CalController">
+    <children>
+
+        <Label id="lbl01" layoutX="34.0" layoutY="39.0" text="Value 1" />
+        <Label id="lbl01" layoutX="176.0" layoutY="39.0" text="Value 2" />
+
+        <TextField id="tbx01" fx:id="tbx01" layoutX="78.0" layoutY="35.0" prefHeight="25.0" prefWidth="69.0" />
+        <TextField id="tbx02" fx:id="tbx02" layoutX="220.0" layoutY="35.0" prefHeight="25.0" prefWidth="65.0" />
+
+        <TextArea id="textareaResult" fx:id="textareaResult" layoutX="65.0" layoutY="72.0" prefHeight="98.0" prefWidth="198.0" />
+
+        <Button id="btnClear" fx:id="btnClear" layoutX="64.0" layoutY="197.0" mnemonicParsing="false" onAction="#claarFieldsAction" prefHeight="25.0" prefWidth="69.0" text="Clear" />
+        <Button fx:id="button" layoutX="201.0" layoutY="197.0" onAction="#calculateSquarsAction" text="Calculate" />
+        <Label fx:id="lblErrorMsg" layoutX="64.0" layoutY="174.0" prefHeight="17.0" prefWidth="198.0" textFill="#ff0c0c" />
+
+    </children>
+</AnchorPane>
